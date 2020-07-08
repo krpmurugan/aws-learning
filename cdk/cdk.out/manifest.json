@@ -1,0 +1,628 @@
+{
+  "version": "5.0.0",
+  "artifacts": {
+    "Tree": {
+      "type": "cdk:tree",
+      "properties": {
+        "file": "tree.json"
+      }
+    },
+    "CdkWorkshopStack": {
+      "type": "aws:cloudformation:stack",
+      "environment": "aws://unknown-account/unknown-region",
+      "properties": {
+        "templateFile": "CdkWorkshopStack.template.json"
+      },
+      "metadata": {
+        "/CdkWorkshopStack": [
+          {
+            "type": "aws:cdk:asset",
+            "data": {
+              "path": "asset.974234d2dc99d5141bec38b7bdd444147c1386a1d8e1f211f4e8f631d4740651",
+              "id": "974234d2dc99d5141bec38b7bdd444147c1386a1d8e1f211f4e8f631d4740651",
+              "packaging": "zip",
+              "sourceHash": "974234d2dc99d5141bec38b7bdd444147c1386a1d8e1f211f4e8f631d4740651",
+              "s3BucketParameter": "AssetParameters974234d2dc99d5141bec38b7bdd444147c1386a1d8e1f211f4e8f631d4740651S3Bucket086ADCD5",
+              "s3KeyParameter": "AssetParameters974234d2dc99d5141bec38b7bdd444147c1386a1d8e1f211f4e8f631d4740651S3VersionKey8445C00C",
+              "artifactHashParameter": "AssetParameters974234d2dc99d5141bec38b7bdd444147c1386a1d8e1f211f4e8f631d4740651ArtifactHashB7AE73D8"
+            },
+            "trace": [
+              "ConstructNode.addMetadata (D:\\Go-work\\src\\github.com\\emisgroup\\aws-learning\\aws\\cdk-workshop\\node_modules\\@aws-cdk\\core\\lib\\construct-compat.ts:405:92)",
+              "LegacyStackSynthesizer.doAddFileAsset (D:\\Go-work\\src\\github.com\\emisgroup\\aws-learning\\aws\\cdk-workshop\\node_modules\\@aws-cdk\\core\\lib\\stack-synthesizers\\legacy.ts:152:23)",
+              "LegacyStackSynthesizer.addFileAsset (D:\\Go-work\\src\\github.com\\emisgroup\\aws-learning\\aws\\cdk-workshop\\node_modules\\@aws-cdk\\core\\lib\\stack-synthesizers\\legacy.ts:69:19)",
+              "CdkWorkshopStack.addFileAsset (D:\\Go-work\\src\\github.com\\emisgroup\\aws-learning\\aws\\cdk-workshop\\node_modules\\@aws-cdk\\core\\lib\\stack.ts:599:29)",
+              "LegacyStackSynthesizer.addFileAsset (D:\\Go-work\\src\\github.com\\emisgroup\\aws-learning\\aws\\cdk-workshop\\node_modules\\@aws-cdk\\core\\lib\\stack-synthesizers\\legacy.ts:73:25)",
+              "new Asset (D:\\Go-work\\src\\github.com\\emisgroup\\aws-learning\\aws\\cdk-workshop\\node_modules\\@aws-cdk\\aws-s3-assets\\lib\\asset.ts:138:40)",
+              "AssetCode.bind (D:\\Go-work\\src\\github.com\\emisgroup\\aws-learning\\aws\\cdk-workshop\\node_modules\\@aws-cdk\\aws-lambda\\lib\\code.ts:180:20)",
+              "new Function (D:\\Go-work\\src\\github.com\\emisgroup\\aws-learning\\aws\\cdk-workshop\\node_modules\\@aws-cdk\\aws-lambda\\lib\\function.ts:502:29)",
+              "new CdkWorkshopStack (D:\\Go-work\\src\\github.com\\emisgroup\\aws-learning\\aws\\cdk-workshop\\lib\\cdk-workshop-stack.ts:10:19)",
+              "Object.<anonymous> (D:\\Go-work\\src\\github.com\\emisgroup\\aws-learning\\aws\\cdk-workshop\\bin\\cdk-workshop.ts:6:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1138:30)",
+              "Module.m._compile (D:\\Go-work\\src\\github.com\\emisgroup\\aws-learning\\aws\\cdk-workshop\\node_modules\\ts-node\\src\\index.ts:858:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1158:10)",
+              "Object.require.extensions.<computed> [as .ts] (D:\\Go-work\\src\\github.com\\emisgroup\\aws-learning\\aws\\cdk-workshop\\node_modules\\ts-node\\src\\index.ts:861:12)",
+              "Module.load (internal/modules/cjs/loader.js:986:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:879:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "main (D:\\Go-work\\src\\github.com\\emisgroup\\aws-learning\\aws\\cdk-workshop\\node_modules\\ts-node\\src\\bin.ts:227:14)",
+              "Object.<anonymous> (D:\\Go-work\\src\\github.com\\emisgroup\\aws-learning\\aws\\cdk-workshop\\node_modules\\ts-node\\src\\bin.ts:513:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1138:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1158:10)",
+              "Module.load (internal/modules/cjs/loader.js:986:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:879:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/CdkWorkshopStack/HelloHandler/ServiceRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "HelloHandlerServiceRole11EF7C63",
+            "trace": [
+              "new Role (D:\\Go-work\\src\\github.com\\emisgroup\\aws-learning\\aws\\cdk-workshop\\node_modules\\@aws-cdk\\aws-iam\\lib\\role.ts:319:18)",
+              "new Function (D:\\Go-work\\src\\github.com\\emisgroup\\aws-learning\\aws\\cdk-workshop\\node_modules\\@aws-cdk\\aws-lambda\\lib\\function.ts:492:31)",
+              "new CdkWorkshopStack (D:\\Go-work\\src\\github.com\\emisgroup\\aws-learning\\aws\\cdk-workshop\\lib\\cdk-workshop-stack.ts:10:19)",
+              "Object.<anonymous> (D:\\Go-work\\src\\github.com\\emisgroup\\aws-learning\\aws\\cdk-workshop\\bin\\cdk-workshop.ts:6:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1138:30)",
+              "Module.m._compile (D:\\Go-work\\src\\github.com\\emisgroup\\aws-learning\\aws\\cdk-workshop\\node_modules\\ts-node\\src\\index.ts:858:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1158:10)",
+              "Object.require.extensions.<computed> [as .ts] (D:\\Go-work\\src\\github.com\\emisgroup\\aws-learning\\aws\\cdk-workshop\\node_modules\\ts-node\\src\\index.ts:861:12)",
+              "Module.load (internal/modules/cjs/loader.js:986:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:879:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "main (D:\\Go-work\\src\\github.com\\emisgroup\\aws-learning\\aws\\cdk-workshop\\node_modules\\ts-node\\src\\bin.ts:227:14)",
+              "Object.<anonymous> (D:\\Go-work\\src\\github.com\\emisgroup\\aws-learning\\aws\\cdk-workshop\\node_modules\\ts-node\\src\\bin.ts:513:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1138:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1158:10)",
+              "Module.load (internal/modules/cjs/loader.js:986:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:879:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/CdkWorkshopStack/HelloHandler/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "HelloHandler2E4FBA4D",
+            "trace": [
+              "new Function (D:\\Go-work\\src\\github.com\\emisgroup\\aws-learning\\aws\\cdk-workshop\\node_modules\\@aws-cdk\\aws-lambda\\lib\\function.ts:507:35)",
+              "new CdkWorkshopStack (D:\\Go-work\\src\\github.com\\emisgroup\\aws-learning\\aws\\cdk-workshop\\lib\\cdk-workshop-stack.ts:10:19)",
+              "Object.<anonymous> (D:\\Go-work\\src\\github.com\\emisgroup\\aws-learning\\aws\\cdk-workshop\\bin\\cdk-workshop.ts:6:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1138:30)",
+              "Module.m._compile (D:\\Go-work\\src\\github.com\\emisgroup\\aws-learning\\aws\\cdk-workshop\\node_modules\\ts-node\\src\\index.ts:858:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1158:10)",
+              "Object.require.extensions.<computed> [as .ts] (D:\\Go-work\\src\\github.com\\emisgroup\\aws-learning\\aws\\cdk-workshop\\node_modules\\ts-node\\src\\index.ts:861:12)",
+              "Module.load (internal/modules/cjs/loader.js:986:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:879:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "main (D:\\Go-work\\src\\github.com\\emisgroup\\aws-learning\\aws\\cdk-workshop\\node_modules\\ts-node\\src\\bin.ts:227:14)",
+              "Object.<anonymous> (D:\\Go-work\\src\\github.com\\emisgroup\\aws-learning\\aws\\cdk-workshop\\node_modules\\ts-node\\src\\bin.ts:513:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1138:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1158:10)",
+              "Module.load (internal/modules/cjs/loader.js:986:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:879:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/CdkWorkshopStack/AssetParameters/974234d2dc99d5141bec38b7bdd444147c1386a1d8e1f211f4e8f631d4740651/S3Bucket": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AssetParameters974234d2dc99d5141bec38b7bdd444147c1386a1d8e1f211f4e8f631d4740651S3Bucket086ADCD5",
+            "trace": [
+              "new FileAssetParameters (D:\\Go-work\\src\\github.com\\emisgroup\\aws-learning\\aws\\cdk-workshop\\node_modules\\@aws-cdk\\core\\lib\\private\\asset-parameters.ts:16:32)",
+              "LegacyStackSynthesizer.doAddFileAsset (D:\\Go-work\\src\\github.com\\emisgroup\\aws-learning\\aws\\cdk-workshop\\node_modules\\@aws-cdk\\core\\lib\\stack-synthesizers\\legacy.ts:139:16)",
+              "LegacyStackSynthesizer.addFileAsset (D:\\Go-work\\src\\github.com\\emisgroup\\aws-learning\\aws\\cdk-workshop\\node_modules\\@aws-cdk\\core\\lib\\stack-synthesizers\\legacy.ts:69:19)",
+              "CdkWorkshopStack.addFileAsset (D:\\Go-work\\src\\github.com\\emisgroup\\aws-learning\\aws\\cdk-workshop\\node_modules\\@aws-cdk\\core\\lib\\stack.ts:599:29)",
+              "LegacyStackSynthesizer.addFileAsset (D:\\Go-work\\src\\github.com\\emisgroup\\aws-learning\\aws\\cdk-workshop\\node_modules\\@aws-cdk\\core\\lib\\stack-synthesizers\\legacy.ts:73:25)",
+              "new Asset (D:\\Go-work\\src\\github.com\\emisgroup\\aws-learning\\aws\\cdk-workshop\\node_modules\\@aws-cdk\\aws-s3-assets\\lib\\asset.ts:138:40)",
+              "AssetCode.bind (D:\\Go-work\\src\\github.com\\emisgroup\\aws-learning\\aws\\cdk-workshop\\node_modules\\@aws-cdk\\aws-lambda\\lib\\code.ts:180:20)",
+              "new Function (D:\\Go-work\\src\\github.com\\emisgroup\\aws-learning\\aws\\cdk-workshop\\node_modules\\@aws-cdk\\aws-lambda\\lib\\function.ts:502:29)",
+              "new CdkWorkshopStack (D:\\Go-work\\src\\github.com\\emisgroup\\aws-learning\\aws\\cdk-workshop\\lib\\cdk-workshop-stack.ts:10:19)",
+              "Object.<anonymous> (D:\\Go-work\\src\\github.com\\emisgroup\\aws-learning\\aws\\cdk-workshop\\bin\\cdk-workshop.ts:6:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1138:30)",
+              "Module.m._compile (D:\\Go-work\\src\\github.com\\emisgroup\\aws-learning\\aws\\cdk-workshop\\node_modules\\ts-node\\src\\index.ts:858:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1158:10)",
+              "Object.require.extensions.<computed> [as .ts] (D:\\Go-work\\src\\github.com\\emisgroup\\aws-learning\\aws\\cdk-workshop\\node_modules\\ts-node\\src\\index.ts:861:12)",
+              "Module.load (internal/modules/cjs/loader.js:986:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:879:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "main (D:\\Go-work\\src\\github.com\\emisgroup\\aws-learning\\aws\\cdk-workshop\\node_modules\\ts-node\\src\\bin.ts:227:14)",
+              "Object.<anonymous> (D:\\Go-work\\src\\github.com\\emisgroup\\aws-learning\\aws\\cdk-workshop\\node_modules\\ts-node\\src\\bin.ts:513:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1138:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1158:10)",
+              "Module.load (internal/modules/cjs/loader.js:986:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:879:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/CdkWorkshopStack/AssetParameters/974234d2dc99d5141bec38b7bdd444147c1386a1d8e1f211f4e8f631d4740651/S3VersionKey": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AssetParameters974234d2dc99d5141bec38b7bdd444147c1386a1d8e1f211f4e8f631d4740651S3VersionKey8445C00C",
+            "trace": [
+              "new FileAssetParameters (D:\\Go-work\\src\\github.com\\emisgroup\\aws-learning\\aws\\cdk-workshop\\node_modules\\@aws-cdk\\core\\lib\\private\\asset-parameters.ts:21:31)",
+              "LegacyStackSynthesizer.doAddFileAsset (D:\\Go-work\\src\\github.com\\emisgroup\\aws-learning\\aws\\cdk-workshop\\node_modules\\@aws-cdk\\core\\lib\\stack-synthesizers\\legacy.ts:139:16)",
+              "LegacyStackSynthesizer.addFileAsset (D:\\Go-work\\src\\github.com\\emisgroup\\aws-learning\\aws\\cdk-workshop\\node_modules\\@aws-cdk\\core\\lib\\stack-synthesizers\\legacy.ts:69:19)",
+              "CdkWorkshopStack.addFileAsset (D:\\Go-work\\src\\github.com\\emisgroup\\aws-learning\\aws\\cdk-workshop\\node_modules\\@aws-cdk\\core\\lib\\stack.ts:599:29)",
+              "LegacyStackSynthesizer.addFileAsset (D:\\Go-work\\src\\github.com\\emisgroup\\aws-learning\\aws\\cdk-workshop\\node_modules\\@aws-cdk\\core\\lib\\stack-synthesizers\\legacy.ts:73:25)",
+              "new Asset (D:\\Go-work\\src\\github.com\\emisgroup\\aws-learning\\aws\\cdk-workshop\\node_modules\\@aws-cdk\\aws-s3-assets\\lib\\asset.ts:138:40)",
+              "AssetCode.bind (D:\\Go-work\\src\\github.com\\emisgroup\\aws-learning\\aws\\cdk-workshop\\node_modules\\@aws-cdk\\aws-lambda\\lib\\code.ts:180:20)",
+              "new Function (D:\\Go-work\\src\\github.com\\emisgroup\\aws-learning\\aws\\cdk-workshop\\node_modules\\@aws-cdk\\aws-lambda\\lib\\function.ts:502:29)",
+              "new CdkWorkshopStack (D:\\Go-work\\src\\github.com\\emisgroup\\aws-learning\\aws\\cdk-workshop\\lib\\cdk-workshop-stack.ts:10:19)",
+              "Object.<anonymous> (D:\\Go-work\\src\\github.com\\emisgroup\\aws-learning\\aws\\cdk-workshop\\bin\\cdk-workshop.ts:6:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1138:30)",
+              "Module.m._compile (D:\\Go-work\\src\\github.com\\emisgroup\\aws-learning\\aws\\cdk-workshop\\node_modules\\ts-node\\src\\index.ts:858:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1158:10)",
+              "Object.require.extensions.<computed> [as .ts] (D:\\Go-work\\src\\github.com\\emisgroup\\aws-learning\\aws\\cdk-workshop\\node_modules\\ts-node\\src\\index.ts:861:12)",
+              "Module.load (internal/modules/cjs/loader.js:986:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:879:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "main (D:\\Go-work\\src\\github.com\\emisgroup\\aws-learning\\aws\\cdk-workshop\\node_modules\\ts-node\\src\\bin.ts:227:14)",
+              "Object.<anonymous> (D:\\Go-work\\src\\github.com\\emisgroup\\aws-learning\\aws\\cdk-workshop\\node_modules\\ts-node\\src\\bin.ts:513:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1138:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1158:10)",
+              "Module.load (internal/modules/cjs/loader.js:986:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:879:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/CdkWorkshopStack/AssetParameters/974234d2dc99d5141bec38b7bdd444147c1386a1d8e1f211f4e8f631d4740651/ArtifactHash": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AssetParameters974234d2dc99d5141bec38b7bdd444147c1386a1d8e1f211f4e8f631d4740651ArtifactHashB7AE73D8",
+            "trace": [
+              "new FileAssetParameters (D:\\Go-work\\src\\github.com\\emisgroup\\aws-learning\\aws\\cdk-workshop\\node_modules\\@aws-cdk\\core\\lib\\private\\asset-parameters.ts:26:36)",
+              "LegacyStackSynthesizer.doAddFileAsset (D:\\Go-work\\src\\github.com\\emisgroup\\aws-learning\\aws\\cdk-workshop\\node_modules\\@aws-cdk\\core\\lib\\stack-synthesizers\\legacy.ts:139:16)",
+              "LegacyStackSynthesizer.addFileAsset (D:\\Go-work\\src\\github.com\\emisgroup\\aws-learning\\aws\\cdk-workshop\\node_modules\\@aws-cdk\\core\\lib\\stack-synthesizers\\legacy.ts:69:19)",
+              "CdkWorkshopStack.addFileAsset (D:\\Go-work\\src\\github.com\\emisgroup\\aws-learning\\aws\\cdk-workshop\\node_modules\\@aws-cdk\\core\\lib\\stack.ts:599:29)",
+              "LegacyStackSynthesizer.addFileAsset (D:\\Go-work\\src\\github.com\\emisgroup\\aws-learning\\aws\\cdk-workshop\\node_modules\\@aws-cdk\\core\\lib\\stack-synthesizers\\legacy.ts:73:25)",
+              "new Asset (D:\\Go-work\\src\\github.com\\emisgroup\\aws-learning\\aws\\cdk-workshop\\node_modules\\@aws-cdk\\aws-s3-assets\\lib\\asset.ts:138:40)",
+              "AssetCode.bind (D:\\Go-work\\src\\github.com\\emisgroup\\aws-learning\\aws\\cdk-workshop\\node_modules\\@aws-cdk\\aws-lambda\\lib\\code.ts:180:20)",
+              "new Function (D:\\Go-work\\src\\github.com\\emisgroup\\aws-learning\\aws\\cdk-workshop\\node_modules\\@aws-cdk\\aws-lambda\\lib\\function.ts:502:29)",
+              "new CdkWorkshopStack (D:\\Go-work\\src\\github.com\\emisgroup\\aws-learning\\aws\\cdk-workshop\\lib\\cdk-workshop-stack.ts:10:19)",
+              "Object.<anonymous> (D:\\Go-work\\src\\github.com\\emisgroup\\aws-learning\\aws\\cdk-workshop\\bin\\cdk-workshop.ts:6:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1138:30)",
+              "Module.m._compile (D:\\Go-work\\src\\github.com\\emisgroup\\aws-learning\\aws\\cdk-workshop\\node_modules\\ts-node\\src\\index.ts:858:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1158:10)",
+              "Object.require.extensions.<computed> [as .ts] (D:\\Go-work\\src\\github.com\\emisgroup\\aws-learning\\aws\\cdk-workshop\\node_modules\\ts-node\\src\\index.ts:861:12)",
+              "Module.load (internal/modules/cjs/loader.js:986:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:879:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "main (D:\\Go-work\\src\\github.com\\emisgroup\\aws-learning\\aws\\cdk-workshop\\node_modules\\ts-node\\src\\bin.ts:227:14)",
+              "Object.<anonymous> (D:\\Go-work\\src\\github.com\\emisgroup\\aws-learning\\aws\\cdk-workshop\\node_modules\\ts-node\\src\\bin.ts:513:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1138:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1158:10)",
+              "Module.load (internal/modules/cjs/loader.js:986:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:879:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/CdkWorkshopStack/Endpoint/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "EndpointEEF1FD8F",
+            "trace": [
+              "new RestApi (D:\\Go-work\\src\\github.com\\emisgroup\\aws-learning\\aws\\cdk-workshop\\node_modules\\@aws-cdk\\aws-apigateway\\lib\\restapi.ts:549:22)",
+              "new LambdaRestApi (D:\\Go-work\\src\\github.com\\emisgroup\\aws-learning\\aws\\cdk-workshop\\node_modules\\@aws-cdk\\aws-apigateway\\lib\\lambda-api.ts:50:5)",
+              "new CdkWorkshopStack (D:\\Go-work\\src\\github.com\\emisgroup\\aws-learning\\aws\\cdk-workshop\\lib\\cdk-workshop-stack.ts:17:5)",
+              "Object.<anonymous> (D:\\Go-work\\src\\github.com\\emisgroup\\aws-learning\\aws\\cdk-workshop\\bin\\cdk-workshop.ts:6:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1138:30)",
+              "Module.m._compile (D:\\Go-work\\src\\github.com\\emisgroup\\aws-learning\\aws\\cdk-workshop\\node_modules\\ts-node\\src\\index.ts:858:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1158:10)",
+              "Object.require.extensions.<computed> [as .ts] (D:\\Go-work\\src\\github.com\\emisgroup\\aws-learning\\aws\\cdk-workshop\\node_modules\\ts-node\\src\\index.ts:861:12)",
+              "Module.load (internal/modules/cjs/loader.js:986:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:879:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "main (D:\\Go-work\\src\\github.com\\emisgroup\\aws-learning\\aws\\cdk-workshop\\node_modules\\ts-node\\src\\bin.ts:227:14)",
+              "Object.<anonymous> (D:\\Go-work\\src\\github.com\\emisgroup\\aws-learning\\aws\\cdk-workshop\\node_modules\\ts-node\\src\\bin.ts:513:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1138:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1158:10)",
+              "Module.load (internal/modules/cjs/loader.js:986:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:879:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/CdkWorkshopStack/Endpoint/CloudWatchRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "EndpointCloudWatchRoleC3C64E0F",
+            "trace": [
+              "new Role (D:\\Go-work\\src\\github.com\\emisgroup\\aws-learning\\aws\\cdk-workshop\\node_modules\\@aws-cdk\\aws-iam\\lib\\role.ts:319:18)",
+              "LambdaRestApi.configureCloudWatchRole (D:\\Go-work\\src\\github.com\\emisgroup\\aws-learning\\aws\\cdk-workshop\\node_modules\\@aws-cdk\\aws-apigateway\\lib\\restapi.ts:381:18)",
+              "new RestApi (D:\\Go-work\\src\\github.com\\emisgroup\\aws-learning\\aws\\cdk-workshop\\node_modules\\@aws-cdk\\aws-apigateway\\lib\\restapi.ts:566:12)",
+              "new LambdaRestApi (D:\\Go-work\\src\\github.com\\emisgroup\\aws-learning\\aws\\cdk-workshop\\node_modules\\@aws-cdk\\aws-apigateway\\lib\\lambda-api.ts:50:5)",
+              "new CdkWorkshopStack (D:\\Go-work\\src\\github.com\\emisgroup\\aws-learning\\aws\\cdk-workshop\\lib\\cdk-workshop-stack.ts:17:5)",
+              "Object.<anonymous> (D:\\Go-work\\src\\github.com\\emisgroup\\aws-learning\\aws\\cdk-workshop\\bin\\cdk-workshop.ts:6:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1138:30)",
+              "Module.m._compile (D:\\Go-work\\src\\github.com\\emisgroup\\aws-learning\\aws\\cdk-workshop\\node_modules\\ts-node\\src\\index.ts:858:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1158:10)",
+              "Object.require.extensions.<computed> [as .ts] (D:\\Go-work\\src\\github.com\\emisgroup\\aws-learning\\aws\\cdk-workshop\\node_modules\\ts-node\\src\\index.ts:861:12)",
+              "Module.load (internal/modules/cjs/loader.js:986:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:879:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "main (D:\\Go-work\\src\\github.com\\emisgroup\\aws-learning\\aws\\cdk-workshop\\node_modules\\ts-node\\src\\bin.ts:227:14)",
+              "Object.<anonymous> (D:\\Go-work\\src\\github.com\\emisgroup\\aws-learning\\aws\\cdk-workshop\\node_modules\\ts-node\\src\\bin.ts:513:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1138:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1158:10)",
+              "Module.load (internal/modules/cjs/loader.js:986:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:879:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/CdkWorkshopStack/Endpoint/Account": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "EndpointAccountB8304247",
+            "trace": [
+              "LambdaRestApi.configureCloudWatchRole (D:\\Go-work\\src\\github.com\\emisgroup\\aws-learning\\aws\\cdk-workshop\\node_modules\\@aws-cdk\\aws-apigateway\\lib\\restapi.ts:386:22)",
+              "new RestApi (D:\\Go-work\\src\\github.com\\emisgroup\\aws-learning\\aws\\cdk-workshop\\node_modules\\@aws-cdk\\aws-apigateway\\lib\\restapi.ts:566:12)",
+              "new LambdaRestApi (D:\\Go-work\\src\\github.com\\emisgroup\\aws-learning\\aws\\cdk-workshop\\node_modules\\@aws-cdk\\aws-apigateway\\lib\\lambda-api.ts:50:5)",
+              "new CdkWorkshopStack (D:\\Go-work\\src\\github.com\\emisgroup\\aws-learning\\aws\\cdk-workshop\\lib\\cdk-workshop-stack.ts:17:5)",
+              "Object.<anonymous> (D:\\Go-work\\src\\github.com\\emisgroup\\aws-learning\\aws\\cdk-workshop\\bin\\cdk-workshop.ts:6:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1138:30)",
+              "Module.m._compile (D:\\Go-work\\src\\github.com\\emisgroup\\aws-learning\\aws\\cdk-workshop\\node_modules\\ts-node\\src\\index.ts:858:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1158:10)",
+              "Object.require.extensions.<computed> [as .ts] (D:\\Go-work\\src\\github.com\\emisgroup\\aws-learning\\aws\\cdk-workshop\\node_modules\\ts-node\\src\\index.ts:861:12)",
+              "Module.load (internal/modules/cjs/loader.js:986:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:879:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "main (D:\\Go-work\\src\\github.com\\emisgroup\\aws-learning\\aws\\cdk-workshop\\node_modules\\ts-node\\src\\bin.ts:227:14)",
+              "Object.<anonymous> (D:\\Go-work\\src\\github.com\\emisgroup\\aws-learning\\aws\\cdk-workshop\\node_modules\\ts-node\\src\\bin.ts:513:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1138:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1158:10)",
+              "Module.load (internal/modules/cjs/loader.js:986:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:879:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/CdkWorkshopStack/Endpoint/Deployment/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "EndpointDeployment318525DA5f8cdfe532107839d82cbce31f859259",
+            "trace": [
+              "new Deployment (D:\\Go-work\\src\\github.com\\emisgroup\\aws-learning\\aws\\cdk-workshop\\node_modules\\@aws-cdk\\aws-apigateway\\lib\\deployment.ts:69:21)",
+              "LambdaRestApi.configureDeployment (D:\\Go-work\\src\\github.com\\emisgroup\\aws-learning\\aws\\cdk-workshop\\node_modules\\@aws-cdk\\aws-apigateway\\lib\\restapi.ts:397:32)",
+              "new RestApi (D:\\Go-work\\src\\github.com\\emisgroup\\aws-learning\\aws\\cdk-workshop\\node_modules\\@aws-cdk\\aws-apigateway\\lib\\restapi.ts:569:10)",
+              "new LambdaRestApi (D:\\Go-work\\src\\github.com\\emisgroup\\aws-learning\\aws\\cdk-workshop\\node_modules\\@aws-cdk\\aws-apigateway\\lib\\lambda-api.ts:50:5)",
+              "new CdkWorkshopStack (D:\\Go-work\\src\\github.com\\emisgroup\\aws-learning\\aws\\cdk-workshop\\lib\\cdk-workshop-stack.ts:17:5)",
+              "Object.<anonymous> (D:\\Go-work\\src\\github.com\\emisgroup\\aws-learning\\aws\\cdk-workshop\\bin\\cdk-workshop.ts:6:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1138:30)",
+              "Module.m._compile (D:\\Go-work\\src\\github.com\\emisgroup\\aws-learning\\aws\\cdk-workshop\\node_modules\\ts-node\\src\\index.ts:858:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1158:10)",
+              "Object.require.extensions.<computed> [as .ts] (D:\\Go-work\\src\\github.com\\emisgroup\\aws-learning\\aws\\cdk-workshop\\node_modules\\ts-node\\src\\index.ts:861:12)",
+              "Module.load (internal/modules/cjs/loader.js:986:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:879:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "main (D:\\Go-work\\src\\github.com\\emisgroup\\aws-learning\\aws\\cdk-workshop\\node_modules\\ts-node\\src\\bin.ts:227:14)",
+              "Object.<anonymous> (D:\\Go-work\\src\\github.com\\emisgroup\\aws-learning\\aws\\cdk-workshop\\node_modules\\ts-node\\src\\bin.ts:513:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1138:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1158:10)",
+              "Module.load (internal/modules/cjs/loader.js:986:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:879:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/CdkWorkshopStack/Endpoint/DeploymentStage.prod/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "EndpointDeploymentStageprodB78BEEA0",
+            "trace": [
+              "new Stage (D:\\Go-work\\src\\github.com\\emisgroup\\aws-learning\\aws\\cdk-workshop\\node_modules\\@aws-cdk\\aws-apigateway\\lib\\stage.ts:236:22)",
+              "LambdaRestApi.configureDeployment (D:\\Go-work\\src\\github.com\\emisgroup\\aws-learning\\aws\\cdk-workshop\\node_modules\\@aws-cdk\\aws-apigateway\\lib\\restapi.ts:407:30)",
+              "new RestApi (D:\\Go-work\\src\\github.com\\emisgroup\\aws-learning\\aws\\cdk-workshop\\node_modules\\@aws-cdk\\aws-apigateway\\lib\\restapi.ts:569:10)",
+              "new LambdaRestApi (D:\\Go-work\\src\\github.com\\emisgroup\\aws-learning\\aws\\cdk-workshop\\node_modules\\@aws-cdk\\aws-apigateway\\lib\\lambda-api.ts:50:5)",
+              "new CdkWorkshopStack (D:\\Go-work\\src\\github.com\\emisgroup\\aws-learning\\aws\\cdk-workshop\\lib\\cdk-workshop-stack.ts:17:5)",
+              "Object.<anonymous> (D:\\Go-work\\src\\github.com\\emisgroup\\aws-learning\\aws\\cdk-workshop\\bin\\cdk-workshop.ts:6:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1138:30)",
+              "Module.m._compile (D:\\Go-work\\src\\github.com\\emisgroup\\aws-learning\\aws\\cdk-workshop\\node_modules\\ts-node\\src\\index.ts:858:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1158:10)",
+              "Object.require.extensions.<computed> [as .ts] (D:\\Go-work\\src\\github.com\\emisgroup\\aws-learning\\aws\\cdk-workshop\\node_modules\\ts-node\\src\\index.ts:861:12)",
+              "Module.load (internal/modules/cjs/loader.js:986:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:879:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "main (D:\\Go-work\\src\\github.com\\emisgroup\\aws-learning\\aws\\cdk-workshop\\node_modules\\ts-node\\src\\bin.ts:227:14)",
+              "Object.<anonymous> (D:\\Go-work\\src\\github.com\\emisgroup\\aws-learning\\aws\\cdk-workshop\\node_modules\\ts-node\\src\\bin.ts:513:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1138:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1158:10)",
+              "Module.load (internal/modules/cjs/loader.js:986:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:879:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/CdkWorkshopStack/Endpoint/Endpoint": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Endpoint8024A810",
+            "trace": [
+              "LambdaRestApi.configureDeployment (D:\\Go-work\\src\\github.com\\emisgroup\\aws-learning\\aws\\cdk-workshop\\node_modules\\@aws-cdk\\aws-apigateway\\lib\\restapi.ts:412:7)",
+              "new RestApi (D:\\Go-work\\src\\github.com\\emisgroup\\aws-learning\\aws\\cdk-workshop\\node_modules\\@aws-cdk\\aws-apigateway\\lib\\restapi.ts:569:10)",
+              "new LambdaRestApi (D:\\Go-work\\src\\github.com\\emisgroup\\aws-learning\\aws\\cdk-workshop\\node_modules\\@aws-cdk\\aws-apigateway\\lib\\lambda-api.ts:50:5)",
+              "new CdkWorkshopStack (D:\\Go-work\\src\\github.com\\emisgroup\\aws-learning\\aws\\cdk-workshop\\lib\\cdk-workshop-stack.ts:17:5)",
+              "Object.<anonymous> (D:\\Go-work\\src\\github.com\\emisgroup\\aws-learning\\aws\\cdk-workshop\\bin\\cdk-workshop.ts:6:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1138:30)",
+              "Module.m._compile (D:\\Go-work\\src\\github.com\\emisgroup\\aws-learning\\aws\\cdk-workshop\\node_modules\\ts-node\\src\\index.ts:858:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1158:10)",
+              "Object.require.extensions.<computed> [as .ts] (D:\\Go-work\\src\\github.com\\emisgroup\\aws-learning\\aws\\cdk-workshop\\node_modules\\ts-node\\src\\index.ts:861:12)",
+              "Module.load (internal/modules/cjs/loader.js:986:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:879:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "main (D:\\Go-work\\src\\github.com\\emisgroup\\aws-learning\\aws\\cdk-workshop\\node_modules\\ts-node\\src\\bin.ts:227:14)",
+              "Object.<anonymous> (D:\\Go-work\\src\\github.com\\emisgroup\\aws-learning\\aws\\cdk-workshop\\node_modules\\ts-node\\src\\bin.ts:513:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1138:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1158:10)",
+              "Module.load (internal/modules/cjs/loader.js:986:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:879:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/CdkWorkshopStack/Endpoint/Default/{proxy+}/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Endpointproxy39E2174E",
+            "trace": [
+              "new Resource (D:\\Go-work\\src\\github.com\\emisgroup\\aws-learning\\aws\\cdk-workshop\\node_modules\\@aws-cdk\\aws-apigateway\\lib\\resource.ts:401:22)",
+              "new ProxyResource (D:\\Go-work\\src\\github.com\\emisgroup\\aws-learning\\aws\\cdk-workshop\\node_modules\\@aws-cdk\\aws-apigateway\\lib\\resource.ts:473:5)",
+              "RootResource.addProxy (D:\\Go-work\\src\\github.com\\emisgroup\\aws-learning\\aws\\cdk-workshop\\node_modules\\@aws-cdk\\aws-apigateway\\lib\\resource.ts:190:12)",
+              "new LambdaRestApi (D:\\Go-work\\src\\github.com\\emisgroup\\aws-learning\\aws\\cdk-workshop\\node_modules\\@aws-cdk\\aws-apigateway\\lib\\lambda-api.ts:57:17)",
+              "new CdkWorkshopStack (D:\\Go-work\\src\\github.com\\emisgroup\\aws-learning\\aws\\cdk-workshop\\lib\\cdk-workshop-stack.ts:17:5)",
+              "Object.<anonymous> (D:\\Go-work\\src\\github.com\\emisgroup\\aws-learning\\aws\\cdk-workshop\\bin\\cdk-workshop.ts:6:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1138:30)",
+              "Module.m._compile (D:\\Go-work\\src\\github.com\\emisgroup\\aws-learning\\aws\\cdk-workshop\\node_modules\\ts-node\\src\\index.ts:858:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1158:10)",
+              "Object.require.extensions.<computed> [as .ts] (D:\\Go-work\\src\\github.com\\emisgroup\\aws-learning\\aws\\cdk-workshop\\node_modules\\ts-node\\src\\index.ts:861:12)",
+              "Module.load (internal/modules/cjs/loader.js:986:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:879:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "main (D:\\Go-work\\src\\github.com\\emisgroup\\aws-learning\\aws\\cdk-workshop\\node_modules\\ts-node\\src\\bin.ts:227:14)",
+              "Object.<anonymous> (D:\\Go-work\\src\\github.com\\emisgroup\\aws-learning\\aws\\cdk-workshop\\node_modules\\ts-node\\src\\bin.ts:513:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1138:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1158:10)",
+              "Module.load (internal/modules/cjs/loader.js:986:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:879:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/CdkWorkshopStack/Endpoint/Default/{proxy+}/ANY/ApiPermission.CdkWorkshopStackEndpoint018E8349.ANY..{proxy+}": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "EndpointproxyANYApiPermissionCdkWorkshopStackEndpoint018E8349ANYproxy747DCA52",
+            "trace": [
+              "Function.addPermission (D:\\Go-work\\src\\github.com\\emisgroup\\aws-learning\\aws\\cdk-workshop\\node_modules\\@aws-cdk\\aws-lambda\\lib\\function-base.ts:212:5)",
+              "LambdaIntegration.bind (D:\\Go-work\\src\\github.com\\emisgroup\\aws-learning\\aws\\cdk-workshop\\node_modules\\@aws-cdk\\aws-apigateway\\lib\\integrations\\lambda.ts:61:18)",
+              "new Method (D:\\Go-work\\src\\github.com\\emisgroup\\aws-learning\\aws\\cdk-workshop\\node_modules\\@aws-cdk\\aws-apigateway\\lib\\method.ts:196:36)",
+              "ProxyResource.addMethod (D:\\Go-work\\src\\github.com\\emisgroup\\aws-learning\\aws\\cdk-workshop\\node_modules\\@aws-cdk\\aws-apigateway\\lib\\resource.ts:186:12)",
+              "ProxyResource.addMethod (D:\\Go-work\\src\\github.com\\emisgroup\\aws-learning\\aws\\cdk-workshop\\node_modules\\@aws-cdk\\aws-apigateway\\lib\\resource.ts:495:18)",
+              "new ProxyResource (D:\\Go-work\\src\\github.com\\emisgroup\\aws-learning\\aws\\cdk-workshop\\node_modules\\@aws-cdk\\aws-apigateway\\lib\\resource.ts:482:29)",
+              "RootResource.addProxy (D:\\Go-work\\src\\github.com\\emisgroup\\aws-learning\\aws\\cdk-workshop\\node_modules\\@aws-cdk\\aws-apigateway\\lib\\resource.ts:190:12)",
+              "new LambdaRestApi (D:\\Go-work\\src\\github.com\\emisgroup\\aws-learning\\aws\\cdk-workshop\\node_modules\\@aws-cdk\\aws-apigateway\\lib\\lambda-api.ts:57:17)",
+              "new CdkWorkshopStack (D:\\Go-work\\src\\github.com\\emisgroup\\aws-learning\\aws\\cdk-workshop\\lib\\cdk-workshop-stack.ts:17:5)",
+              "Object.<anonymous> (D:\\Go-work\\src\\github.com\\emisgroup\\aws-learning\\aws\\cdk-workshop\\bin\\cdk-workshop.ts:6:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1138:30)",
+              "Module.m._compile (D:\\Go-work\\src\\github.com\\emisgroup\\aws-learning\\aws\\cdk-workshop\\node_modules\\ts-node\\src\\index.ts:858:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1158:10)",
+              "Object.require.extensions.<computed> [as .ts] (D:\\Go-work\\src\\github.com\\emisgroup\\aws-learning\\aws\\cdk-workshop\\node_modules\\ts-node\\src\\index.ts:861:12)",
+              "Module.load (internal/modules/cjs/loader.js:986:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:879:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "main (D:\\Go-work\\src\\github.com\\emisgroup\\aws-learning\\aws\\cdk-workshop\\node_modules\\ts-node\\src\\bin.ts:227:14)",
+              "Object.<anonymous> (D:\\Go-work\\src\\github.com\\emisgroup\\aws-learning\\aws\\cdk-workshop\\node_modules\\ts-node\\src\\bin.ts:513:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1138:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1158:10)",
+              "Module.load (internal/modules/cjs/loader.js:986:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:879:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/CdkWorkshopStack/Endpoint/Default/{proxy+}/ANY/ApiPermission.Test.CdkWorkshopStackEndpoint018E8349.ANY..{proxy+}": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "EndpointproxyANYApiPermissionTestCdkWorkshopStackEndpoint018E8349ANYproxy41939001",
+            "trace": [
+              "Function.addPermission (D:\\Go-work\\src\\github.com\\emisgroup\\aws-learning\\aws\\cdk-workshop\\node_modules\\@aws-cdk\\aws-lambda\\lib\\function-base.ts:212:5)",
+              "LambdaIntegration.bind (D:\\Go-work\\src\\github.com\\emisgroup\\aws-learning\\aws\\cdk-workshop\\node_modules\\@aws-cdk\\aws-apigateway\\lib\\integrations\\lambda.ts:69:20)",
+              "new Method (D:\\Go-work\\src\\github.com\\emisgroup\\aws-learning\\aws\\cdk-workshop\\node_modules\\@aws-cdk\\aws-apigateway\\lib\\method.ts:196:36)",
+              "ProxyResource.addMethod (D:\\Go-work\\src\\github.com\\emisgroup\\aws-learning\\aws\\cdk-workshop\\node_modules\\@aws-cdk\\aws-apigateway\\lib\\resource.ts:186:12)",
+              "ProxyResource.addMethod (D:\\Go-work\\src\\github.com\\emisgroup\\aws-learning\\aws\\cdk-workshop\\node_modules\\@aws-cdk\\aws-apigateway\\lib\\resource.ts:495:18)",
+              "new ProxyResource (D:\\Go-work\\src\\github.com\\emisgroup\\aws-learning\\aws\\cdk-workshop\\node_modules\\@aws-cdk\\aws-apigateway\\lib\\resource.ts:482:29)",
+              "RootResource.addProxy (D:\\Go-work\\src\\github.com\\emisgroup\\aws-learning\\aws\\cdk-workshop\\node_modules\\@aws-cdk\\aws-apigateway\\lib\\resource.ts:190:12)",
+              "new LambdaRestApi (D:\\Go-work\\src\\github.com\\emisgroup\\aws-learning\\aws\\cdk-workshop\\node_modules\\@aws-cdk\\aws-apigateway\\lib\\lambda-api.ts:57:17)",
+              "new CdkWorkshopStack (D:\\Go-work\\src\\github.com\\emisgroup\\aws-learning\\aws\\cdk-workshop\\lib\\cdk-workshop-stack.ts:17:5)",
+              "Object.<anonymous> (D:\\Go-work\\src\\github.com\\emisgroup\\aws-learning\\aws\\cdk-workshop\\bin\\cdk-workshop.ts:6:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1138:30)",
+              "Module.m._compile (D:\\Go-work\\src\\github.com\\emisgroup\\aws-learning\\aws\\cdk-workshop\\node_modules\\ts-node\\src\\index.ts:858:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1158:10)",
+              "Object.require.extensions.<computed> [as .ts] (D:\\Go-work\\src\\github.com\\emisgroup\\aws-learning\\aws\\cdk-workshop\\node_modules\\ts-node\\src\\index.ts:861:12)",
+              "Module.load (internal/modules/cjs/loader.js:986:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:879:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "main (D:\\Go-work\\src\\github.com\\emisgroup\\aws-learning\\aws\\cdk-workshop\\node_modules\\ts-node\\src\\bin.ts:227:14)",
+              "Object.<anonymous> (D:\\Go-work\\src\\github.com\\emisgroup\\aws-learning\\aws\\cdk-workshop\\node_modules\\ts-node\\src\\bin.ts:513:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1138:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1158:10)",
+              "Module.load (internal/modules/cjs/loader.js:986:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:879:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/CdkWorkshopStack/Endpoint/Default/{proxy+}/ANY/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "EndpointproxyANYC09721C5",
+            "trace": [
+              "new Method (D:\\Go-work\\src\\github.com\\emisgroup\\aws-learning\\aws\\cdk-workshop\\node_modules\\@aws-cdk\\aws-apigateway\\lib\\method.ts:214:22)",
+              "ProxyResource.addMethod (D:\\Go-work\\src\\github.com\\emisgroup\\aws-learning\\aws\\cdk-workshop\\node_modules\\@aws-cdk\\aws-apigateway\\lib\\resource.ts:186:12)",
+              "ProxyResource.addMethod (D:\\Go-work\\src\\github.com\\emisgroup\\aws-learning\\aws\\cdk-workshop\\node_modules\\@aws-cdk\\aws-apigateway\\lib\\resource.ts:495:18)",
+              "new ProxyResource (D:\\Go-work\\src\\github.com\\emisgroup\\aws-learning\\aws\\cdk-workshop\\node_modules\\@aws-cdk\\aws-apigateway\\lib\\resource.ts:482:29)",
+              "RootResource.addProxy (D:\\Go-work\\src\\github.com\\emisgroup\\aws-learning\\aws\\cdk-workshop\\node_modules\\@aws-cdk\\aws-apigateway\\lib\\resource.ts:190:12)",
+              "new LambdaRestApi (D:\\Go-work\\src\\github.com\\emisgroup\\aws-learning\\aws\\cdk-workshop\\node_modules\\@aws-cdk\\aws-apigateway\\lib\\lambda-api.ts:57:17)",
+              "new CdkWorkshopStack (D:\\Go-work\\src\\github.com\\emisgroup\\aws-learning\\aws\\cdk-workshop\\lib\\cdk-workshop-stack.ts:17:5)",
+              "Object.<anonymous> (D:\\Go-work\\src\\github.com\\emisgroup\\aws-learning\\aws\\cdk-workshop\\bin\\cdk-workshop.ts:6:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1138:30)",
+              "Module.m._compile (D:\\Go-work\\src\\github.com\\emisgroup\\aws-learning\\aws\\cdk-workshop\\node_modules\\ts-node\\src\\index.ts:858:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1158:10)",
+              "Object.require.extensions.<computed> [as .ts] (D:\\Go-work\\src\\github.com\\emisgroup\\aws-learning\\aws\\cdk-workshop\\node_modules\\ts-node\\src\\index.ts:861:12)",
+              "Module.load (internal/modules/cjs/loader.js:986:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:879:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "main (D:\\Go-work\\src\\github.com\\emisgroup\\aws-learning\\aws\\cdk-workshop\\node_modules\\ts-node\\src\\bin.ts:227:14)",
+              "Object.<anonymous> (D:\\Go-work\\src\\github.com\\emisgroup\\aws-learning\\aws\\cdk-workshop\\node_modules\\ts-node\\src\\bin.ts:513:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1138:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1158:10)",
+              "Module.load (internal/modules/cjs/loader.js:986:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:879:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/CdkWorkshopStack/Endpoint/Default/ANY/ApiPermission.CdkWorkshopStackEndpoint018E8349.ANY..": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "EndpointANYApiPermissionCdkWorkshopStackEndpoint018E8349ANYE84BEB04",
+            "trace": [
+              "Function.addPermission (D:\\Go-work\\src\\github.com\\emisgroup\\aws-learning\\aws\\cdk-workshop\\node_modules\\@aws-cdk\\aws-lambda\\lib\\function-base.ts:212:5)",
+              "LambdaIntegration.bind (D:\\Go-work\\src\\github.com\\emisgroup\\aws-learning\\aws\\cdk-workshop\\node_modules\\@aws-cdk\\aws-apigateway\\lib\\integrations\\lambda.ts:61:18)",
+              "new Method (D:\\Go-work\\src\\github.com\\emisgroup\\aws-learning\\aws\\cdk-workshop\\node_modules\\@aws-cdk\\aws-apigateway\\lib\\method.ts:196:36)",
+              "RootResource.addMethod (D:\\Go-work\\src\\github.com\\emisgroup\\aws-learning\\aws\\cdk-workshop\\node_modules\\@aws-cdk\\aws-apigateway\\lib\\resource.ts:186:12)",
+              "ProxyResource.addMethod (D:\\Go-work\\src\\github.com\\emisgroup\\aws-learning\\aws\\cdk-workshop\\node_modules\\@aws-cdk\\aws-apigateway\\lib\\resource.ts:492:29)",
+              "new ProxyResource (D:\\Go-work\\src\\github.com\\emisgroup\\aws-learning\\aws\\cdk-workshop\\node_modules\\@aws-cdk\\aws-apigateway\\lib\\resource.ts:482:29)",
+              "RootResource.addProxy (D:\\Go-work\\src\\github.com\\emisgroup\\aws-learning\\aws\\cdk-workshop\\node_modules\\@aws-cdk\\aws-apigateway\\lib\\resource.ts:190:12)",
+              "new LambdaRestApi (D:\\Go-work\\src\\github.com\\emisgroup\\aws-learning\\aws\\cdk-workshop\\node_modules\\@aws-cdk\\aws-apigateway\\lib\\lambda-api.ts:57:17)",
+              "new CdkWorkshopStack (D:\\Go-work\\src\\github.com\\emisgroup\\aws-learning\\aws\\cdk-workshop\\lib\\cdk-workshop-stack.ts:17:5)",
+              "Object.<anonymous> (D:\\Go-work\\src\\github.com\\emisgroup\\aws-learning\\aws\\cdk-workshop\\bin\\cdk-workshop.ts:6:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1138:30)",
+              "Module.m._compile (D:\\Go-work\\src\\github.com\\emisgroup\\aws-learning\\aws\\cdk-workshop\\node_modules\\ts-node\\src\\index.ts:858:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1158:10)",
+              "Object.require.extensions.<computed> [as .ts] (D:\\Go-work\\src\\github.com\\emisgroup\\aws-learning\\aws\\cdk-workshop\\node_modules\\ts-node\\src\\index.ts:861:12)",
+              "Module.load (internal/modules/cjs/loader.js:986:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:879:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "main (D:\\Go-work\\src\\github.com\\emisgroup\\aws-learning\\aws\\cdk-workshop\\node_modules\\ts-node\\src\\bin.ts:227:14)",
+              "Object.<anonymous> (D:\\Go-work\\src\\github.com\\emisgroup\\aws-learning\\aws\\cdk-workshop\\node_modules\\ts-node\\src\\bin.ts:513:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1138:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1158:10)",
+              "Module.load (internal/modules/cjs/loader.js:986:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:879:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/CdkWorkshopStack/Endpoint/Default/ANY/ApiPermission.Test.CdkWorkshopStackEndpoint018E8349.ANY..": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "EndpointANYApiPermissionTestCdkWorkshopStackEndpoint018E8349ANYB6CC1B64",
+            "trace": [
+              "Function.addPermission (D:\\Go-work\\src\\github.com\\emisgroup\\aws-learning\\aws\\cdk-workshop\\node_modules\\@aws-cdk\\aws-lambda\\lib\\function-base.ts:212:5)",
+              "LambdaIntegration.bind (D:\\Go-work\\src\\github.com\\emisgroup\\aws-learning\\aws\\cdk-workshop\\node_modules\\@aws-cdk\\aws-apigateway\\lib\\integrations\\lambda.ts:69:20)",
+              "new Method (D:\\Go-work\\src\\github.com\\emisgroup\\aws-learning\\aws\\cdk-workshop\\node_modules\\@aws-cdk\\aws-apigateway\\lib\\method.ts:196:36)",
+              "RootResource.addMethod (D:\\Go-work\\src\\github.com\\emisgroup\\aws-learning\\aws\\cdk-workshop\\node_modules\\@aws-cdk\\aws-apigateway\\lib\\resource.ts:186:12)",
+              "ProxyResource.addMethod (D:\\Go-work\\src\\github.com\\emisgroup\\aws-learning\\aws\\cdk-workshop\\node_modules\\@aws-cdk\\aws-apigateway\\lib\\resource.ts:492:29)",
+              "new ProxyResource (D:\\Go-work\\src\\github.com\\emisgroup\\aws-learning\\aws\\cdk-workshop\\node_modules\\@aws-cdk\\aws-apigateway\\lib\\resource.ts:482:29)",
+              "RootResource.addProxy (D:\\Go-work\\src\\github.com\\emisgroup\\aws-learning\\aws\\cdk-workshop\\node_modules\\@aws-cdk\\aws-apigateway\\lib\\resource.ts:190:12)",
+              "new LambdaRestApi (D:\\Go-work\\src\\github.com\\emisgroup\\aws-learning\\aws\\cdk-workshop\\node_modules\\@aws-cdk\\aws-apigateway\\lib\\lambda-api.ts:57:17)",
+              "new CdkWorkshopStack (D:\\Go-work\\src\\github.com\\emisgroup\\aws-learning\\aws\\cdk-workshop\\lib\\cdk-workshop-stack.ts:17:5)",
+              "Object.<anonymous> (D:\\Go-work\\src\\github.com\\emisgroup\\aws-learning\\aws\\cdk-workshop\\bin\\cdk-workshop.ts:6:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1138:30)",
+              "Module.m._compile (D:\\Go-work\\src\\github.com\\emisgroup\\aws-learning\\aws\\cdk-workshop\\node_modules\\ts-node\\src\\index.ts:858:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1158:10)",
+              "Object.require.extensions.<computed> [as .ts] (D:\\Go-work\\src\\github.com\\emisgroup\\aws-learning\\aws\\cdk-workshop\\node_modules\\ts-node\\src\\index.ts:861:12)",
+              "Module.load (internal/modules/cjs/loader.js:986:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:879:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "main (D:\\Go-work\\src\\github.com\\emisgroup\\aws-learning\\aws\\cdk-workshop\\node_modules\\ts-node\\src\\bin.ts:227:14)",
+              "Object.<anonymous> (D:\\Go-work\\src\\github.com\\emisgroup\\aws-learning\\aws\\cdk-workshop\\node_modules\\ts-node\\src\\bin.ts:513:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1138:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1158:10)",
+              "Module.load (internal/modules/cjs/loader.js:986:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:879:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/CdkWorkshopStack/Endpoint/Default/ANY/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "EndpointANY485C938B",
+            "trace": [
+              "new Method (D:\\Go-work\\src\\github.com\\emisgroup\\aws-learning\\aws\\cdk-workshop\\node_modules\\@aws-cdk\\aws-apigateway\\lib\\method.ts:214:22)",
+              "RootResource.addMethod (D:\\Go-work\\src\\github.com\\emisgroup\\aws-learning\\aws\\cdk-workshop\\node_modules\\@aws-cdk\\aws-apigateway\\lib\\resource.ts:186:12)",
+              "ProxyResource.addMethod (D:\\Go-work\\src\\github.com\\emisgroup\\aws-learning\\aws\\cdk-workshop\\node_modules\\@aws-cdk\\aws-apigateway\\lib\\resource.ts:492:29)",
+              "new ProxyResource (D:\\Go-work\\src\\github.com\\emisgroup\\aws-learning\\aws\\cdk-workshop\\node_modules\\@aws-cdk\\aws-apigateway\\lib\\resource.ts:482:29)",
+              "RootResource.addProxy (D:\\Go-work\\src\\github.com\\emisgroup\\aws-learning\\aws\\cdk-workshop\\node_modules\\@aws-cdk\\aws-apigateway\\lib\\resource.ts:190:12)",
+              "new LambdaRestApi (D:\\Go-work\\src\\github.com\\emisgroup\\aws-learning\\aws\\cdk-workshop\\node_modules\\@aws-cdk\\aws-apigateway\\lib\\lambda-api.ts:57:17)",
+              "new CdkWorkshopStack (D:\\Go-work\\src\\github.com\\emisgroup\\aws-learning\\aws\\cdk-workshop\\lib\\cdk-workshop-stack.ts:17:5)",
+              "Object.<anonymous> (D:\\Go-work\\src\\github.com\\emisgroup\\aws-learning\\aws\\cdk-workshop\\bin\\cdk-workshop.ts:6:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1138:30)",
+              "Module.m._compile (D:\\Go-work\\src\\github.com\\emisgroup\\aws-learning\\aws\\cdk-workshop\\node_modules\\ts-node\\src\\index.ts:858:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1158:10)",
+              "Object.require.extensions.<computed> [as .ts] (D:\\Go-work\\src\\github.com\\emisgroup\\aws-learning\\aws\\cdk-workshop\\node_modules\\ts-node\\src\\index.ts:861:12)",
+              "Module.load (internal/modules/cjs/loader.js:986:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:879:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "main (D:\\Go-work\\src\\github.com\\emisgroup\\aws-learning\\aws\\cdk-workshop\\node_modules\\ts-node\\src\\bin.ts:227:14)",
+              "Object.<anonymous> (D:\\Go-work\\src\\github.com\\emisgroup\\aws-learning\\aws\\cdk-workshop\\node_modules\\ts-node\\src\\bin.ts:513:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1138:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1158:10)",
+              "Module.load (internal/modules/cjs/loader.js:986:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:879:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "runtime": {
+    "libraries": {
+      "@aws-cdk/core": "1.49.1",
+      "@aws-cdk/cx-api": "1.49.1",
+      "@aws-cdk/cloud-assembly-schema": "1.49.1",
+      "@aws-cdk/aws-lambda": "1.49.1",
+      "@aws-cdk/aws-iam": "1.49.1",
+      "@aws-cdk/region-info": "1.49.1",
+      "@aws-cdk/aws-cloudwatch": "1.49.1",
+      "@aws-cdk/aws-ec2": "1.49.1",
+      "@aws-cdk/aws-kms": "1.49.1",
+      "@aws-cdk/aws-ssm": "1.49.1",
+      "@aws-cdk/aws-logs": "1.49.1",
+      "@aws-cdk/aws-s3": "1.49.1",
+      "@aws-cdk/aws-events": "1.49.1",
+      "@aws-cdk/aws-sqs": "1.49.1",
+      "@aws-cdk/aws-s3-assets": "1.49.1",
+      "@aws-cdk/assets": "1.49.1",
+      "@aws-cdk/aws-apigateway": "1.49.1",
+      "jsii-runtime": "node.js/v12.18.1"
+    }
+  }
+}
