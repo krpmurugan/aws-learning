@@ -116,3 +116,31 @@ func isValid(s string) bool {
 }
 
 ```
+
+Chunk Size in array
+```
+func chunkSlice(slice []int, chunkSize int) [][]int {
+	var chunks [][]int
+	for {
+		if len(slice) == 0 {
+			break
+		}
+
+		if len(slice) < chunkSize {
+			chunkSize = len(slice)
+		}
+
+		chunks = append(chunks, slice[0:chunkSize])
+		slice = slice[chunkSize:]
+	}
+
+	return chunks
+}
+
+func main() {
+	intSlice := []int{1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13}
+	fmt.Println(chunkSlice(intSlice, 3))
+}
+O/P: [[0 1 2] [3 4 5] [6 7 8] [9]]
+```
+
