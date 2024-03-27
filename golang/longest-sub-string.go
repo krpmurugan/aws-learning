@@ -50,6 +50,31 @@ func lengthOfLongestSubstring(s string) int {
 	return solution
 }
 
+func longestSubstring(str string) int {
+	m := make(map[byte]byte)
+	count := 0
+	max := 0
+	s := []byte{}
+	res := []byte{}
+	for i := 0; i < len(str); i++ {
+		if _, ok := m[str[i]]; ok {
+			if count > max {
+				max = count
+				res = s
+			}
+			count = 1
+			s = []byte{}
+		} else {
+			m[str[i]] = str[i]
+			s = append(s, str[i])
+			count++
+		}
+	}
+	fmt.Println(string(res))
+	return max
+}
+
+
 func main() {
 	fmt.Println(lengthOfLongestSubstring("aabccbb"))
 }
