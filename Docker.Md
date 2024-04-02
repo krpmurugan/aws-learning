@@ -52,11 +52,16 @@ ESXi is a Type 1 hypervisor, meaning it runs directly on system hardware without
 
 Virtualization is an abstract version of a physical machine, while containerization is the abstract version of an application.
 
-| Virtualization  | Containerization | 
-| :---: | :---: | 
-| This helps developers to run and host multiple OS on the hardware of a single physical server. |This helps developers to deploy multiple applications using the same operating system on a single virtual machine or server. |
-| Hypervisors provide overall virtual machines to the guest operating systems.  | Containers ensure isolated environment/ user spaces are provided for running the applications. Any changes done within the container do not reflect on the host or other containers of the same host.|
-| These virtual machines form an abstraction of the system hardware layer this means that each virtual machine on the host acts like a physical machine. | Containers form abstraction of the application layer which means that each container constitutes a different application. | 
+| Aspects | Virtualization  | Containerization | 
+| :---: | :---: | :---: | 
+|-| This helps developers to run and host multiple OS on the hardware of a single physical server. |This helps developers to deploy multiple applications using the same operating system on a single virtual machine or server. |
+|Isolation | Each VM runs its own guest operating system.  | Containers share the host operating system kernel.|
+|Resource Usage| Each VM requires its own set of resources. | Containers are lightweight and share host resources | 
+|Basic| Simulate separate virtual machines for each application on a single physical machine. | Contains multiple applications on a single physical machine. | 
+|Operating System| With virtualization, there is a separate operating system for each application. | With containerization, all the applications share the same operating system. | 
+|Guest OS	| Virtualization supports various operating systems on the same physical machine or server. | Containerization restricts guest OS, as Containers are packaged to work with the same operating system as of server. | 
+|Deployment| Hypervisor is required to implement VMs. |A container engine is used to deploy an individual container.
+|File Size	|The virtual machine has a larger file size.|Containers are light-weight executables.
 
 ### Docker Daemon
 
