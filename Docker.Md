@@ -24,6 +24,9 @@ DockerFile: It is a text file that has all commands which need to be run for bui
 
 Docker Swarm is a clustering and orchestration tool for Docker containers, allowing you to create and manage a cluster of Docker nodes as a single virtual system. Docker Swarm enables you to deploy and scale containerized applications across multiple hosts, providing high availability and load balancing
 
+### Virtual machine
+A virtual machine (VM) is like a copy of an actual physical computer. A virtual server operates in a multi-tenant environment, meaning that multiple VMs run on the same physical hardware. Contrarily, Containers sit on top of a physical server and its host OS. Every container shares the host OS kernel and the binaries and libraries to run the required application. Once you set up a VM, you can run a container within the VM. Containers and VMs are not mutually exclusive and can co-exist alongside.
+
 ### Virtualization
 
 Hardware virtualization is a technique that allows a physical machine to run multiple virtual machines (VMs) on top of a hypervisor. A hypervisor is a software layer that manages the access and allocation of the hardware resources, such as CPU, memory, disk, and network, among the VMs. Each VM has its own operating system (OS) and applications, and is isolated from the others.
@@ -54,6 +57,10 @@ Virtualization is an abstract version of a physical machine, while containerizat
 | This helps developers to run and host multiple OS on the hardware of a single physical server. |This helps developers to deploy multiple applications using the same operating system on a single virtual machine or server. |
 | Hypervisors provide overall virtual machines to the guest operating systems.  | Containers ensure isolated environment/ user spaces are provided for running the applications. Any changes done within the container do not reflect on the host or other containers of the same host.|
 | These virtual machines form an abstraction of the system hardware layer this means that each virtual machine on the host acts like a physical machine. | Containers form abstraction of the application layer which means that each container constitutes a different application. | 
+
+### Docker Daemon
+
+The Docker daemon (dockerd) is a background service that runs on the host operating system and manages Docker containers. It is responsible for creating, running, and monitoring containers, as well as handling interactions between the Docker client and the Docker engine
 
 ### What do you know about the Docker system prune?
 
