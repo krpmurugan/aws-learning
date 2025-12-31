@@ -6,7 +6,11 @@ Given a sorted linked list, delete all duplicates such that each element appear 
 
 
 I/P: 1 → 1 → 2 → 3 → 3
-O/p : 1->2->3 */
+O/p : 1->2->3 
+
+https://github.com/austingebauer/go-leetcode/blob/master/missing_number_268/solution.go
+https://github.com/keep-practicing/leetcode-go/blob/master/solutions/0007_reverse_integer/reverse_integer.go
+*/
 
 package main
 
